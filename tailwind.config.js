@@ -13,7 +13,15 @@ export default {
         background: '#2F2F2F',
         interactions: '#00000', // por verse 
         text: '#F4F4F4',
-        
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+      },
+      animation: {
+        float: 'float 3s ease-in-out infinite'
       }
     },
   },
