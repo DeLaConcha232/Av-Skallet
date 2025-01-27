@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     extend: {
-      colors:{
+      colors: {
         // Paleta de colores = Innovation and Professional
         primary: '#FF6F00',
         secondary: '#00B0FF',
@@ -19,9 +19,11 @@ export default {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-10px)' },
         },
+
       },
       animation: {
-        float: 'float 3s ease-in-out infinite'
+        float: 'float 3s ease-in-out infinite',
+
       }
     },
   },

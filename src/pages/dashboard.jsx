@@ -1,10 +1,11 @@
 
-import Value from '../components/Value'
+// import Value from '../components/Value'
+import CarouselValues from '../components/CarouselValues'
 
 export default function dashboard() {
     return (
         <>
-            <main className='flex justify-center items-center flex-col gap-16 my-44 mx-10 h-full'>
+            <main className='flex justify-center items-center flex-col gap-16 h-full'>
                 <article id="title-subtitle" className="flex justify-center items-center flex-col gap-16">
                     <section >
                         <h1 className='text-center text-5xl text-primary'>AV - SKALLET</h1>
@@ -14,7 +15,7 @@ export default function dashboard() {
                     </section>
                 </article>
                 <article id="values" className="w-auto h-auto m-10">
-                    <Value text="Lealtad"/>
+                    <CarouselValues />
                 </article>
             </main>
         </>
