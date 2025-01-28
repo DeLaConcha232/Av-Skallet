@@ -32,8 +32,9 @@
 }
 
 .all{
-    border: 1px solid #000;
+    border: 1px solid #ffffff;
     padding: 3rem;
+    color: rgb(44, 44, 44);
 }
 
 

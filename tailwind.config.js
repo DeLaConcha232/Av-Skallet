@@ -6,13 +6,17 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+       Bona: ['Bona Nova', 'serif'],
+       Rubik: ['Rubik', 'sans-serif'],
+      },
       colors: {
         // Paleta de colores = Innovation and Professional
         primary: '#FF6F00',
-        secondary: '#00B0FF',
-        background: '#2F2F2F',
-        interactions: '#00000', // por verse 
-        text: '#F4F4F4',
+        secondary: '#2F2F2F',
+        background: '#F4F4F4',
+        interactions: '#00B0FF', // por verse 
+        text: '#FFFFFF',
       },
       keyframes: {
         float: {

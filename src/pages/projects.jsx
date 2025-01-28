@@ -51,7 +51,7 @@ const CircleMenu = () => {
             {items.map((item, index) => (
               <div
                 key={index}
-                className="circle-item text-secondary"
+                className="circle-item text-secondary font-Rubik"
                 style={{
                   transform: `
                 rotate(${index * (360 / items.length) + angle}deg) 
@@ -65,11 +65,11 @@ const CircleMenu = () => {
             ))}
           </div>
           <div className="central-text">
-            <h2 className="text-primary">{items[centralIndex]}</h2>
+            <h2 className="text-primary font-Bona text-xl my-12">{items[centralIndex]}</h2>
           </div>
-          <div className="flex flex-wrap p-5 gap-5">
-            <button onClick={() => handleRotate("left")}>⟲</button>
-            <button onClick={() => handleRotate("right")}>⟳</button>
+          <div className="flex flex-wrap  gap-5">
+            <button className="w-full " onClick={() => handleRotate("left")}>⟲</button>
+            <button className="w-full" onClick={() => handleRotate("right")}>⟳</button>
           </div>
         </div>
         <section className="py-36">
