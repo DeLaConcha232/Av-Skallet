@@ -12,7 +12,7 @@
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    border: 2px solid #000;
+    /* border: 2px solid #ffffff; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,9 +22,9 @@
   .circle-item {
     position: absolute;
     transform-origin: center;
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: center;
+    /* font-size: 1rem;
+    font-weight: 500; */
+    /* text-align: center; */
     cursor: pointer;
     transition: transform 0.5s ease;
   }
@@ -48,14 +48,14 @@
   }
   
   button {
-    background-color: #333;
+    /* background-color: #333; */
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
     font-size: 1rem;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 100%;
     transition: background-color 0.3s;
   }
   
@@ -85,8 +85,8 @@
   
   @media (max-width: 480px) {
     .circle {
-      width: 10rem; 
-      height: 10rem;
+      width: 12rem; 
+      height: 12rem;
     }
   
     .circle-item {
@@ -109,4 +109,9 @@
   }
   
 
-
+@media (min-width: 1024px) {
+  .circle {
+    width: 22rem; 
+    height: 22rem;
+  }
+}

@@ -6,27 +6,33 @@ import Projects from './pages/projects'
 import Workmetod from './pages/workmetod'
 import Forms from './pages/Forms'
 
+// import Particles from './particles'
+
 
 function App() {
   return (
     <>
-      <main className='bg-background w-auto h-auto'>
-        <article id='Navbar' className='  flex justify-center items-center'>
+      <main className='bg-background w-full h-full'>
+        {/* <article id='Navbar' className='flex justify-center items-center p-3'>
+        </article> */}
+        <article className='absolute w-full h-auto flex justify-center my-2'>
           <Navbar />
         </article>
-        <article className='flex justify-center items-center pt-44 px-10 pb-0'>
+        {/* bg-custom-gradient bg-blend-overlay */}
+        <article className='flex justify-center items-center px-10 pb-0 w-auto h-screen'>
           <Dashboard />
         </article>
-        <article className='flex justify-center items-center px-8 pb-40 '>
+        <article id='service' className='flex justify-center items-center px-8 py-20 w-full h-screen'>
           <Services />
+          {/* <Particles className="particles-container absolute top-0 left-0 w-full h-full z-0"/> */}
         </article>
-        <article className='flex justify-center items-center p-36 pb-20 w-auto h-auto'>
+        <article className='flex justify-center items-center p-20 pb-20 w-full h-auto pt-60'>
           <Projects />
         </article>
-        <article className='flex justify-center items-center'>
+        <article className='flex justify-center items-center w-full h-screen lg:mt-32'>
           <Workmetod />
         </article>
-        <article className='flex justify-center items-center'>
+        <article className='flex justify-center items-center p-10 mt-32 '>
           <Forms />
         </article>
       </main>

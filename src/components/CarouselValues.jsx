@@ -1,26 +1,27 @@
 
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Value from '../components/Value';
-
-import '../styles/carouselvalues.css';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+import Value from './Value';
+
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-export default function App() {
+export default function CarouselValues() {
     return (
         <>
             <Swiper
-                spaceBetween={0}
+                spaceBetween={50}
                 centeredSlides={true}
+                loop={true}
                 autoplay={{
-                    delay: 5000,
+                    delay: 2500,
                     disableOnInteraction: false,
                 }}
                 // pagination={{
@@ -28,27 +29,33 @@ export default function App() {
                 // }}
                 navigation={false}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper"
+                className="w-80 h-auto"
             >
-                <SwiperSlide >
+                <SwiperSlide className='text-center text-lg flex justify-center items-center'>
                     <Value text="Lealtad" />
                 </SwiperSlide>
-                <SwiperSlide >
+                <SwiperSlide className='text-center text-lg flex justify-center items-center'>
                     <Value text="Adaptabilidad" />
                 </SwiperSlide>
-                <SwiperSlide >
-                    <Value text="Trabajo en Equipo" />
+                <SwiperSlide className='text-center text-lg flex justify-center items-center'>
+                    <Value text="Trabajo en equipo" />
                 </SwiperSlide>
-                <SwiperSlide >
-                    <Value text="Orientacion al Cliente" />
+                <SwiperSlide className='text-center text-lg flex justify-center items-center'>
+                    <Value text="Orientacion al cliente" />
                 </SwiperSlide>
-                <SwiperSlide>
-                    <Value text="Crecimiento Mutuo" />
+                <SwiperSlide className='text-center text-lg flex justify-center items-center'>
+                    <Value text="Eficacia" />
                 </SwiperSlide>
-                <SwiperSlide>
-                    <Value text="Etica profesional" />
+                <SwiperSlide className='text-center text-lg flex justify-center items-center'>
+                    <Value text="Crecimiento mutuo" />
+                </SwiperSlide>
+                <SwiperSlide className='text-center text-lg flex justify-center items-center'>
+                    <Value text="Etica Profesional" />
                 </SwiperSlide>
             </Swiper>
+
         </>
     );
 }
+
+

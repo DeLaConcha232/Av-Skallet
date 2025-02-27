@@ -1,22 +1,38 @@
+import flowbite from "flowbite-react/tailwind";
+
+
 /** @type {import('tailwindcss').Config} */
-export default {
+export default ({
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    flowbite.content(),
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(112.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(157.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(135deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(90deg, rgb(195, 195, 195),rgb(228, 228, 228))'
+      },
       fontFamily: {
-       Bona: ['Bona Nova', 'serif'],
-       Rubik: ['Rubik', 'sans-serif'],
+        Bona: ['Bona Nova', 'serif'],
+        Rubik: ['Rubik', 'sans-serif'],
       },
       colors: {
         // Paleta de colores = Innovation and Professional
-        primary: '#FF6F00',
-        secondary: '#2F2F2F',
-        background: '#F4F4F4',
-        interactions: '#00B0FF', // por verse 
-        text: '#FFFFFF',
+        naranja: '#FF6F00',
+        grisoscuro: '#2F2F2F',
+        blancobege: '#F4F4F4',
+        azulelectrico: '#00B0FF', // por verse 
+        blanco: '#FFFFFF',
+        negro: '#0D0D0D',
+        
+        background: '#1C1C1C', // negro mate
+        primary: '#F5F5F5', // Blanco Roto
+        buttons: '#00B0FF', // azul electrico
+        second: '#808080', // gris Medio
+        backgroundSecond: '#2E2E2E', // gris oscuro
+
+
       },
       keyframes: {
         float: {
@@ -31,6 +47,8 @@ export default {
       }
     },
   },
-  plugins: [],
-}
+  plugins: [
+    flowbite.plugin(),
+  ],
+})
 
