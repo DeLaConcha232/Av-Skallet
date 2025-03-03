@@ -11,7 +11,6 @@ export default function workmetod() {
                 <div className="grow border border-backgroundSecond p-10 font-Bona text-lg text-primary lg:text-2xl lg:py-16">Metodologias de trabajo efectivas</div>
                 <div className="w-full border border-backgroundSecond p-10 font-Bona text-lg text-primary lg:text-2xl lg:py-16">Atencion Personalizada</div>
             </div>
-
         </>
     )
 }

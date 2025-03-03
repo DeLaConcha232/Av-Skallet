@@ -6,7 +6,7 @@ export default function Navbar() {
             <main className="w-4/5 h-auto fixed">
                 <nav className=" flex justify-evenly items-center  my-2 ">
                     <div className="mx-10">
-                        <h1 className="text-second text-md font-Bona lg:text-xl">Home</h1>
+                        <h1 className="text-second text-md font-Rubik lg:text-xl">Home</h1>
                     </div>
                     <article className="mx-10">
                         <img src="../../src/assets/Logotipo_BlancoNegro.svg" alt="Logotipo" className="w-10 lg:w-12" />

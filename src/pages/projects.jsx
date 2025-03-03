@@ -3,6 +3,7 @@ import "../styles/CircleMenu.css"; // Archivo CSS externo
 import CaoruselProjects from '../components/CarouselProjects'
 
 import IconCircle from '../components/IconCircle'
+import '../styles/projects.css'
 
 import IconNodejs from '../assets/Node.jsICON.svg'
 import Html from '../assets/HTMLicon.svg'
@@ -74,25 +75,17 @@ const CircleMenu = () => {
               `,
                 }}
               >
-                <img key="nodejs-icon" src={item} alt="" className="w-20 h-auto" />
+                <img key="icons" src={item} alt="" className="w-14 h-auto md:w-20 lg:w-20 lg:h-auto" />
               </div>
             ))}
+            
           </div>
           <div className="flex justify-center flex-wrap gap-5">
             {/* <button className="w-full text-buttons bg-backgroundSecond" onClick={() => handleRotate("left")}>⟲</button> */}
             {/* <button className="w-full text-buttons bg-backgroundSecond" onClick={() => handleRotate("right")}>⟳</button> */}
           </div>
         </div>
-        {/* <section className="py-28 w-auto h-auto lg:py-0">
-          <Carousel
-            images={[
-              imageItems[centralIndex],
-            ]}
-            url={urls[centralIndex]}
-          />
-          <h2 className="text-primary font-Bona text-4xl text-center mt-10">{items[centralIndex]}</h2>
-        </section> */}
-        <section className="w-3/4 h-96 flex justify-center items-center border border-collapse border-white p-2 rounded-lg lg:w-full lg:h-80">
+        <section className="w-full h-96 flex justify-center items-center border border-collapse border-second p-4 shadow-2xl rounded-lg lg:w-full lg:h-80">
           <CaoruselProjects />
         </section>
       </main>

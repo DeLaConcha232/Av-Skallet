@@ -4,7 +4,7 @@ import Dashboard from './pages/dashboard'
 import Services from './pages/services'
 import Projects from './pages/projects'
 import Workmetod from './pages/workmetod'
-import Forms from './pages/Forms'
+import Forms from './pages/Footer'
 
 // import Particles from './particles'
 
@@ -12,7 +12,7 @@ import Forms from './pages/Forms'
 function App() {
   return (
     <>
-      <main className='bg-background w-full h-full'>
+      <main className='bg-background w-full h-full flex flex-col gap-10'>
         {/* <article id='Navbar' className='flex justify-center items-center p-3'>
         </article> */}
         <article className='absolute w-full h-auto flex justify-center my-2'>
@@ -22,9 +22,9 @@ function App() {
         <article className='flex justify-center items-center px-10 pb-0 w-auto h-screen'>
           <Dashboard />
         </article>
-        <article id='service' className='flex justify-center items-center px-8 py-20 w-full h-screen'>
+        <article id='service' className='flex justify-center items-center px-8 py-20 w-full h-screen mt-20 lg:mt-0'>
           <Services />
-          {/* <Particles className="particles-container absolute top-0 left-0 w-full h-full z-0"/> */}
+          {/* <Particles className="mx-auto max-w-4xl" /> */}
         </article>
         <article className='flex justify-center items-center p-20 pb-20 w-full h-auto pt-60'>
           <Projects />
@@ -32,7 +32,7 @@ function App() {
         <article className='flex justify-center items-center w-full h-screen lg:mt-32'>
           <Workmetod />
         </article>
-        <article className='flex justify-center items-center p-10 mt-32 '>
+        <article className=''>
           <Forms />
         </article>
       </main>

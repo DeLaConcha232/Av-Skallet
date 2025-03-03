@@ -4,7 +4,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 const IconCircle = () => {
   return (
     <DotLottieReact
-      src="https://lottie.host/4b19fb0f-43a2-4f89-9848-ed2a8aa1cd96/ekJf4XhLWJ.lottie"
+      src="https://lottie.host/0ebc1247-9c63-448e-8dfa-56efb302ca57/qfWWGCZioX.json"
       loop
       autoplay
     />

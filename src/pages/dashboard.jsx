@@ -9,8 +9,8 @@ export default function dashboard() {
             <main className='flex justify-center items-center flex-col gap-16 h-full w-auto lg:flex-row lg:gap-0'>
                 <article id="title-subtitle" className="flex justify-center items-center flex-col gap-16">
                     <section className='flex justify-center items-center flex-col gap-4'>
-                        <h1 id='title' className='text-center text-6xl text-primary font-Bona mt-60 lg:text-7xl lg:mt-0'>AV - SKALLET</h1>
-                        <h3 className='text-center text-xl text-primary font-Rubik'>Todo empieza con una idea</h3>
+                        <h1 id='title' className='text-center text-6xl text-primary font-Bona mt-60 lg:text-7xl lg:mt-0 tracking-widest'>AV-SKALLET</h1>
+                        <h3 className='text-center text-xl text-second font-Rubik'>Todo empieza con una idea</h3>
                     </section>
                     <article id="values" className="w-auto h-auto">
                         <CarouselValues />

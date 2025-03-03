@@ -4,7 +4,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 const IconTech = () => {
   return (
     <DotLottieReact
-      src="https://lottie.host/2199783f-9589-465e-b0a4-88c4f82db1da/2oVb89lnrO.json"
+      src="https://lottie.host/ea363f50-ad84-44f2-a66a-390c55fdc28c/d1OWCK2nl3.lottie"
       loop
       autoplay
     />

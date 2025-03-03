@@ -25,11 +25,15 @@ export default ({
         azulelectrico: '#00B0FF', // por verse 
         blanco: '#FFFFFF',
         negro: '#0D0D0D',
+        verdeWhatsapp: '#24D366',
+        rojogmail: '#D1382E',
+        colorGithub: '#5C6BC0',
         
-        background: '#1C1C1C', // negro mate
-        primary: '#F5F5F5', // Blanco Roto
-        buttons: '#00B0FF', // azul electrico
-        second: '#808080', // gris Medio
+        
+        background: '#FFFFFF', // blanco
+        primary: '#020202', // negro
+        buttons: '#E1213A', // rojo
+        second: '#737373', // gris Medio
         backgroundSecond: '#2E2E2E', // gris oscuro
 
 
