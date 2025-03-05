@@ -21,7 +21,6 @@ export default function App() {
   return (
     <>
       <Swiper
-
         direction={'vertical'}
         spaceBetween={30}
         centeredSlides={true}
@@ -31,9 +30,9 @@ export default function App() {
           disableOnInteraction: false,
         }}
         speed={6000}
-        pagination={{
-          clickable: true,
-        }}
+        // pagination={{
+        //   clickable: false,
+        // }}
         modules={[Autoplay, Pagination, Navigation]}
         className="w-full h-full"
       >
@@ -63,7 +62,6 @@ export default function App() {
         <SwiperSlide className="text-center text-lg bg-white flex items-center justify-center">
           <img src={SheetFromForm} alt="" className='object-contain' />
         </SwiperSlide>
-
       </Swiper>
     </>
   );

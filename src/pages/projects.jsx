@@ -85,7 +85,7 @@ const CircleMenu = () => {
             {/* <button className="w-full text-buttons bg-backgroundSecond" onClick={() => handleRotate("right")}>⟳</button> */}
           </div>
         </div>
-        <section className="w-full h-96 flex justify-center items-center border border-collapse border-second p-4 shadow-2xl rounded-lg lg:w-full lg:h-80">
+        <section className="w-full h-96 flex justify-center items-center border border-collapse border-second p-4 shadow-2xl rounded-lg sm:mt-10">
           <CaoruselProjects />
         </section>
       </main>
