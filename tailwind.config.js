@@ -1,22 +1,58 @@
+import flowbite from "flowbite-react/tailwind";
+
+
 /** @type {import('tailwindcss').Config} */
-export default {
+export default ({
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    flowbite.content(),
   ],
   theme: {
     extend: {
-      colors:{
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(112.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(157.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(135deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(90deg, rgb(195, 195, 195),rgb(228, 228, 228))'
+      },
+      fontFamily: {
+        Bona: ['Bona Nova', 'serif'],
+        Rubik: ['Rubik', 'sans-serif'],
+      },
+      colors: {
         // Paleta de colores = Innovation and Professional
-        primary: '#FF6F00',
-        secondary: '#00B0FF',
-        background: '#2F2F2F',
-        interactions: '#00000', // por verse 
-        text: '#F4F4F4',
+        naranja: '#FF6F00',
+        grisoscuro: '#2F2F2F',
+        blancobege: '#F4F4F4',
+        azulelectrico: '#00B0FF', // por verse 
+        blanco: '#FFFFFF',
+        negro: '#0D0D0D',
+        verdeWhatsapp: '#24D366',
+        rojogmail: '#D1382E',
+        colorGithub: '#5C6BC0',
         
+        
+        background: '#FFFFFF', // blanco
+        primary: '#020202', // negro
+        buttons: '#E1213A', // rojo
+        second: '#737373', // gris Medio
+        backgroundSecond: '#2E2E2E', // gris oscuro
+
+
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+
+      },
+      animation: {
+        float: 'float 3s ease-in-out infinite',
+
       }
     },
   },
-  plugins: [],
-}
+  plugins: [
+    flowbite.plugin(),
+  ],
+})
 

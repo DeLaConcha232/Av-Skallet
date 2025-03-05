@@ -1,21 +1,24 @@
 
-import Value from '../components/Value'
+import CarouselValues from '../components/CarouselValues'
+import '../styles/dash.css'
+import IconTech from '../components/IconTech'
 
 export default function dashboard() {
     return (
         <>
-            <main className='flex justify-center items-center flex-col gap-16 my-44 mx-10 h-full'>
+            <main className='flex justify-center items-center flex-col gap-16 h-full w-auto lg:flex-row lg:gap-0'>
                 <article id="title-subtitle" className="flex justify-center items-center flex-col gap-16">
-                    <section >
-                        <h1 className='text-center text-5xl text-primary'>AV - SKALLET</h1>
+                    <section className='flex justify-center items-center flex-col gap-4'>
+                        <h1 id='title' className='text-center text-6xl text-primary font-Bona mt-60 lg:text-7xl lg:mt-0 tracking-widest'>AV-SKALLET</h1>
+                        <h3 className='text-center text-xl text-second font-Rubik'>Todo empieza con una idea</h3>
                     </section>
-                    <section>
-                        <h2 className='text-center text-2xl text-text'>Todo empieza con una idea -Sujeta a cambios-</h2>
-                    </section>
+                    <article id="values" className="w-auto h-auto">
+                        <CarouselValues />
+                    </article>
                 </article>
-                <article id="values" className="w-auto h-auto m-10">
-                    <Value text="Lealtad"/>
-                </article>
+                <section id='icon' className='flex justify-center items-center w-full h-auto lg:w-1/2'>
+                    <IconTech />
+                </section>
             </main>
         </>
     )
