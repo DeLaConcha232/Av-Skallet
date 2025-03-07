@@ -75,7 +75,7 @@ const CircleMenu = () => {
               `,
                 }}
               >
-                <img key="icons" src={item} alt="" className="w-14 h-auto md:w-20 lg:w-20 lg:h-auto" />
+                <img key="icons" src={item} alt="" className=" w-14 h-auto md:w-20 lg:w-20 lg:h-auto" />
               </div>
             ))}
             

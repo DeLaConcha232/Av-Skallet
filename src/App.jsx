@@ -7,23 +7,19 @@ import Footer from './pages/Footer'
 import Card from './components/Card'
 import CardAuto from './components/CardAuto'
 
-// import Particles from './particles'
 
 
 function App() {
   return (
     <>
       <main className='bg-background w-full h-full flex flex-col '>
-        {/* <article id='Navbar' className='flex justify-center items-center p-3'>
-        </article> */}
-        <article className='absolute w-full h-auto flex justify-center my-2'>
+        <article className='absolute w-full h-auto flex justify-between my-2'>
           <Navbar />
         </article>
-        {/* bg-custom-gradient bg-blend-overlay */}
         <article className='flex justify-center items-center px-10 pb-0 w-auto h-screen'>
           <Dashboard />
         </article>
-        <article id='service' className='flex justify-center items-center px-8 py-20 w-full h-screen mt-20 lg:mt-0'>
+        <article id='service' className='flex justify-center items-center px-20 py-20 w-full h-auto mt-20 lg:mt-0'>
           <Services />
         </article>
         <article className='flex overflow-hidden items-center whitespace-nowrap my-10 lg:my-0'>

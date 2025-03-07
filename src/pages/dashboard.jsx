@@ -16,7 +16,7 @@ export default function dashboard() {
                         <CarouselValues />
                     </article>
                 </article>
-                <section id='icon' className='flex justify-center items-center w-full h-auto lg:w-1/2'>
+                <section id='icon' className='flex justify-center items-center w-full h-auto lg:w-3/4'>
                     <IconTech />
                 </section>
             </main>
