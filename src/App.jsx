@@ -7,16 +7,20 @@ import Footer from './pages/Footer'
 import Card from './components/Card'
 import CardAuto from './components/CardAuto'
 
-
+import Payment from './assets/IconoTarjeta.svg'
+import IconoContact from './assets/IconoContactos.svg'
+import IconoValidation from './assets/iconovalidation.svg'
+import IconBudget from './assets/budget.svg'
 
 function App() {
+
   return (
     <>
       <main className='bg-background w-full h-full flex flex-col '>
-        <article className='absolute w-full h-auto flex justify-between my-2'>
+        <article className=' w-full h-auto flex justify-between'>
           <Navbar />
         </article>
-        <article className='flex justify-center items-center px-10 pb-0 w-auto h-screen'>
+        <article className='flex justify-center items-center px-10 mb-20 w-auto h-full '>
           <Dashboard />
         </article>
         <article id='service' className='flex justify-center items-center px-20 py-20 w-full h-auto mt-20 lg:mt-0'>
@@ -36,12 +40,13 @@ function App() {
         <article className='flex justify-center items-center p-20 pb-20 w-full h-auto pt-60'>
           <Projects />
         </article>
+
         <article className='flex overflow-x-auto my-20 scroll-containerCard mr-5'>
           <div className='flex gap-10 p-10'>
-            <Card title='Formas de Pago' description='Tarjeta, Paypal, Credito, Debito' src='https://png.pngtree.com/png-clipart/20190927/ourmid/pngtree-business-payment-method-png-image_1747240.jpg' />
-            <Card title='Cotizaciones' description='loremlroemrejadaw' src='https://png.pngtree.com/png-clipart/20190927/ourmid/pngtree-business-payment-method-png-image_1747240.jpg' />
-            <Card title='Contacto' description='Whatsapp - Gmail - GitHub' src='https://png.pngtree.com/png-clipart/20190927/ourmid/pngtree-business-payment-method-png-image_1747240.jpg' />
-            <Card title='Contacto' description='Whatsapp - Gmail - GitHub' src='https://png.pngtree.com/png-clipart/20190927/ourmid/pngtree-business-payment-method-png-image_1747240.jpg' />
+            <Card title='Seguridad y Privacidad' description='La información y los datos proporcionados se manejan con total confidencialidad.' src={Payment} />
+            <Card title='Cotizaciones' description='Solicita una cotización personalizada según las necesidades de tu proyecto.' src={IconBudget} />
+            <Card title='Contacto' description='Comunicación directa a través de WhatsApp o correo electrónico' src={IconoContact}/>
+            <Card title='Validacion de Calidad ' description='Diseño y desarrollo siguiendo las últimas tendencias y estándares tecnológicos' src={IconoValidation} />
           </div>
         </article>
         <article className=''>

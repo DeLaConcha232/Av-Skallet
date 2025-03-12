@@ -41,7 +41,7 @@ export default function Component() {
       <Timeline.Item>
         <Timeline.Point icon={HiCalendar} />
         <Timeline.Content>
-          <Timeline.Time className="text-buttons">April 2022</Timeline.Time>
+          <Timeline.Time className="text-buttons">Gestion</Timeline.Time>
           <Timeline.Title className="text-primary text-2xl">Gestion y creacion de proyectos de software</Timeline.Title>
           <Timeline.Body className="text-second">
           Desarrollo de soluciones de software a medida para la automatización de procesos, gestión empresarial, startUps, utilizando metodologías ágiles como Scrumban.
@@ -51,7 +51,7 @@ export default function Component() {
       <Timeline.Item >
         <Timeline.Point icon={HiCalendar}/>
         <Timeline.Content >
-          <Timeline.Time className="text-buttons">April 2022</Timeline.Time>
+          <Timeline.Time className="text-buttons">Diseño Grafico</Timeline.Time>
           <Timeline.Title className="text-primary text-2xl">Creacion de Logotipos y Marcas Personales</Timeline.Title>
           <Timeline.Body className="text-second">
           Diseño de logotipos y marcas personales con identidad visual única para redes sociales, páginas web y proyectos digitales.
