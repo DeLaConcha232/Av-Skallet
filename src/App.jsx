@@ -20,7 +20,7 @@ function App() {
         <article className=' w-full h-auto flex justify-between'>
           <Navbar />
         </article>
-        <article className='flex justify-center items-center px-10 mb-20 w-auto h-full '>
+        <article className='flex justify-center items-center px-10 mb-20 w-auto h-full mt-16 lg:mt-0'>
           <Dashboard />
         </article>
         <article id='service' className='flex justify-center items-center px-20 py-20 w-full h-auto mt-20 lg:mt-0'>
@@ -40,7 +40,6 @@ function App() {
         <article className='flex justify-center items-center p-20 pb-20 w-full h-auto pt-60'>
           <Projects />
         </article>
-
         <article className='flex overflow-x-auto my-20 scroll-containerCard mr-5'>
           <div className='flex gap-10 p-10'>
             <Card title='Seguridad y Privacidad' description='La información y los datos proporcionados se manejan con total confidencialidad.' src={Payment} />
