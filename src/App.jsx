@@ -26,7 +26,7 @@ function App() {
         <article id='service' className='flex justify-center items-center px-20 py-20 w-full h-auto mt-20 lg:mt-0'>
           <Services />
         </article>
-        <article className='flex overflow-hidden items-center whitespace-nowrap my-10 lg:my-0'>
+        <article className='flex overflow-hidden items-center whitespace-nowrap my-12 lg:my-0'>
           <div className='flex scroll-container'>
             <CardAuto title='Flexiblidad' />
             <CardAuto title='Transparencia' />

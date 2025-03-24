@@ -21,9 +21,9 @@ export default function Component() {
   return (
     <>
 
-      <Footer container>
-        <div className="w-full">
-          <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
+      <Footer container className="">
+        <div className="w-full flex flex-col items-center justify-center gap-5 md:gap-0">
+          <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1 gap-10 md:gap-0">
             <div>
               <Footer.Brand
                 href="/"
@@ -48,7 +48,7 @@ export default function Component() {
                 </Footer.LinkGroup>
               </div>
               <div>
-                <Footer.Title title="Follow" className="font-Rubik font-medium"/>
+                <Footer.Title title="Follow" className="font-Rubik font-medium "/>
                 <Footer.LinkGroup col>
                   <div className="flex gap-3">
                     <img src="/src/assets/IconoGitHub.svg" alt="" className="w-5 h-auto" />
@@ -59,8 +59,8 @@ export default function Component() {
             </div>
           </div>
           <Footer.Divider />
-          <div className="w-full sm:flex sm:items-center sm:justify-between">
-            <Footer.Copyright href="#" by="Av-Skallet" year={2025} className="font-Bona"/>
+          <div className="w-full sm:flex sm:items-center sm:justify-between ">
+            <Footer.Copyright href="#" by="Av-Skallet" year={2025} className="font-Bona text-buttons"/>
             <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
               <Footer.Icon href="https://github.com/DeLaConcha232" icon={BsGithub} />
               <Footer.Icon icon={BsMailbox} onClick={redirectToGmail}/>
