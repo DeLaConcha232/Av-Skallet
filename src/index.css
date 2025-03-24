@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+body > .goog-te-banner-frame {
+    display: none !important;
+}

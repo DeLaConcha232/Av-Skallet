@@ -41,7 +41,7 @@ export default function CarouselValues() {
                     <Value text="Trabajo en equipo" />
                 </SwiperSlide>
                 <SwiperSlide className='text-center text-lg flex justify-center items-center'>
-                    <Value text="Orientacion al cliente" />
+                    <Value text="Orientación al cliente" />
                 </SwiperSlide>
                 <SwiperSlide className='text-center text-lg flex justify-center items-center'>
                     <Value text="Eficacia" />
@@ -50,7 +50,7 @@ export default function CarouselValues() {
                     <Value text="Crecimiento mutuo" />
                 </SwiperSlide>
                 <SwiperSlide className='text-center text-lg flex justify-center items-center'>
-                    <Value text="Etica Profesional" />
+                    <Value text="Ética profesional" />
                 </SwiperSlide>
             </Swiper>
 

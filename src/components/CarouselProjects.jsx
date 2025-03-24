@@ -5,13 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import IMCcalculator from '../assets/IMCcalculator.png'
-import BodyCalculator from '../assets/bodyCalcultator.png'
-import Deportivax from '../assets/Deportivax.png'
-import StartConsulting from '../assets/StartConsulting.png'
-import SheetFromForm from '../assets/SheetFromForm.png'
-
-
 
 
 // import required modules
@@ -34,33 +27,33 @@ export default function App() {
         //   clickable: false,
         // }}
         modules={[Autoplay, Pagination, Navigation]}
-        className="w-full h-full"
+        className="w-full h-full flex flex-col justify-center items-center"
       >
         <SwiperSlide className="text-center text-lg bg-white flex items-center justify-center">
           <a href="https://calculatorimc.surge.sh/" target="_blank" rel="noreferrer">
-            <img src={IMCcalculator} alt="" className='object-contain ' />
+            <img src="/src/assets/IMCcalculator.svg" alt="" className='object-contain ' />
           </a>
         </SwiperSlide>
-        {/* <SwiperSlide className="text-center text-lg bg-white flex items-center justify-center">
-          <img src={Zetio} alt="" className='object-contain'/>
-        </SwiperSlide> */}
+        <SwiperSlide className="text-center text-lg bg-white flex items-center justify-center">
+          <img src="/src/assets/Zetio.svg" alt="" className='object-contain'/>
+        </SwiperSlide>
         <SwiperSlide className="text-center text-lg bg-white flex items-center justify-center">
           <a href="https://deportivax.surge.sh/" target="_blank" rel="noreferrer">
-            <img src={Deportivax} alt="" className='object-contain ' />
+            <img src="/src/assets/deportivax.svg" alt="" className='object-contain ' />
           </a>
         </SwiperSlide>
         <SwiperSlide className="text-center text-lg bg-white flex items-center justify-center">
           <a href="https://bodycalculator.surge.sh/" target="_blank" rel="noreferrer">
-            <img src={BodyCalculator} alt="" className='object-contain ' />
+            <img src="/src/assets/bodyCalcultator.svg" alt="" className='object-contain ' />
           </a>
         </SwiperSlide>
         <SwiperSlide className="text-center text-lg bg-white flex items-center justify-center">
           <a href="https://startconsulting.surge.sh/" target="_blank" rel="noreferrer">
-            <img src={StartConsulting} alt="" className='object-contain ' />
+            <img src="/src/assets/startConsulting.svg" alt="" className='object-contain ' />
           </a>
         </SwiperSlide>
         <SwiperSlide className="text-center text-lg bg-white flex items-center justify-center">
-          <img src={SheetFromForm} alt="" className='object-contain' />
+          <img src="/src/assets/sheetFromForm.svg" alt="" className='object-contain' />
         </SwiperSlide>
       </Swiper>
     </>
