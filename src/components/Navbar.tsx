@@ -9,7 +9,7 @@ export default function Component() {
   return (
     <Navbar fluid rounded className='flex justify-between items-center w-full md:mx-4 lg:mx-5'>
       <Navbar.Brand href='#'>
-        <img src='/src/assets/Logotipo_BlancoNegro.svg' className="mr-5 w-11 h-auto" alt="Logo" />
+        <img src='/src/assets/Logotipo.svg' className="mr-5 w-11 h-auto" alt="Logo" />
       </Navbar.Brand>
       <div>
         <Languague />

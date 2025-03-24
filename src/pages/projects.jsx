@@ -1,19 +1,8 @@
 import { useState, useEffect } from "react";
-import "../styles/CircleMenu.css"; // Archivo CSS externo
-import CaoruselProjects from '../components/CarouselProjects'
+import "/src/styles/CircleMenu.css"; // Archivo CSS externo
+import CaoruselProjects from '/src/components/CarouselProjects'
 
 import IconCircle from '../components/IconCircle'
-import '../styles/projects.css'
-
-import IconNodejs from '../assets/Node.jsICON.svg'
-import Html from '../assets/HTMLicon.svg'
-import Css from '../assets/CSSicon.svg'
-import JS from '../assets/JSicon.svg'
-import React from '../assets/ReactICON.svg'
-import Tailwind from '../assets/TailwindCSSicon.svg'
-import Bootstrap from '../assets/Bootstrapicon.svg'
-import git from '../assets/IconoGit.svg'
-
 
 const CircleMenu = () => {
   const [angle, setAngle] = useState(0);
@@ -21,14 +10,14 @@ const CircleMenu = () => {
 
 
   const items = [
-    IconNodejs,
-    Html,
-    Css,
-    JS,
-    React,
-    Tailwind,
-    Bootstrap,
-    git
+    "/src/assets/Node.jsICON.svg",
+    "/src/assets/HTMLicon.svg",
+    "/src/assets/CSSicon.svg",
+    "/src/assets/JSicon.svg",
+    "/src/assets/ReactICON.svg",
+    "/src/assets/TailwindCSSicon.svg",
+    "/src/assets/Bootstrapicon.svg",
+    "/src/assets/IconoGit.svg",
   ];
 
   // Rotación automática
@@ -61,9 +50,6 @@ const CircleMenu = () => {
       <main className="flex justify-center items-center flex-col w-full h-full z-1 gap-44 lg:flex-row">
         <div className="circle-container">
           <div className="circle border-2 border-primary">
-            {/* <div className="flex justify-center flex-wrap gap-5 lg:ml-56">
-              <button className="w-full text-buttons" onClick={() => handleRotate("right")}>⟳</button>
-            </div> */}
             <IconCircle />
             {items.map((item, index) => (
               <div

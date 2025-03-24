@@ -30,14 +30,14 @@ function App() {
           <div className='flex scroll-container'>
             <CardAuto title='Flexiblidad' />
             <CardAuto title='Transparencia' />
-            <CardAuto title='Comunicacion' />
+            <CardAuto title='Comunicación' />
             <CardAuto title='Adaptabilidad' />
-            <CardAuto title='Atencion Personalizada' />
-            <CardAuto title='Tecnologias actualizadas y recientes' />
-            <CardAuto title='metodologias de trabajo efectivas' />
+            <CardAuto title='Atención Personalizada' />
+            <CardAuto title='Tecnologías actualizadas y recientes' />
+            <CardAuto title='Metodologías de trabajo efectivas' />
           </div>
         </article>
-        <article className='flex justify-center items-center p-20 pb-20 w-full h-auto pt-60'>
+        <article className='flex justify-center items-center p-5 pb-20 w-full h-auto pt-60 sm:p-20'>
           <Projects />
         </article>
         <article className='flex overflow-x-auto my-20 scroll-containerCard mr-5'>
@@ -45,7 +45,7 @@ function App() {
             <Card title='Seguridad y Privacidad' description='La información y los datos proporcionados se manejan con total confidencialidad.' src={Payment} />
             <Card title='Cotizaciones' description='Solicita una cotización personalizada según las necesidades de tu proyecto.' src={IconBudget} />
             <Card title='Contacto' description='Comunicación directa a través de WhatsApp o correo electrónico' src={IconoContact}/>
-            <Card title='Validacion de Calidad ' description='Diseño y desarrollo siguiendo las últimas tendencias y estándares tecnológicos' src={IconoValidation} />
+            <Card title='Validación de calidad ' description='Diseño y desarrollo siguiendo las últimas tendencias y estándares tecnológicos' src={IconoValidation} />
           </div>
         </article>
         <article className=''>

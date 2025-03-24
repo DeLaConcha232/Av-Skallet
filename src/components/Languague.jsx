@@ -62,7 +62,7 @@ const Switch = () => {
         <select
           value={selectedLang}
           onChange={(e) => changeLanguage(e.target.value)}
-          className="px-4 py-2 border rounded bg-white text-black cursor-pointer text-xs md:text-sm"
+          className="px-4 py-2 border font-Bona rounded bg-white text-black cursor-pointer text-xs md:text-sm"
         >
           <option value="es">Español</option>
           <option value="en">Inglés</option>

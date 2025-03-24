@@ -2,10 +2,6 @@
 
 import { Footer } from "flowbite-react";
 import { BsGithub, BsMailbox, BsWhatsapp } from "react-icons/bs";
-import Logo from '../assets/Logotipo_BlancoNegro.svg';
-import Whatsapp from '../assets/IconoWhatsApp.svg';
-import Gmail from '../assets/IconoGmail.svg';
-import Github from '../assets/IconoGitHub.svg';
 
 export default function Component() {
   const redirectToWhatsApp = () => {
@@ -30,34 +26,33 @@ export default function Component() {
           <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
             <div>
               <Footer.Brand
-                href="https://flowbite.com"
-                src={Logo}
+                href="/"
+                src="/src/assets/Logotipo_horizontal.svg"
                 alt="Flowbite Logo"
-                name="AV-SKALLET"
-                className="text-primary font-Rubik"
+                className="text-primary"
               />
             </div>
             <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-2 sm:gap-6">
               <div>
-                <Footer.Title title="Contact" />
+                <Footer.Title title="Contact" className="font-Rubik font-medium"/>
                 <Footer.LinkGroup col>
                   <div className="flex gap-3">
-                    <img src={Gmail} alt="" className="w-5 h-auto" />
-                    <Footer.Link href="#" className="text-primary font-bold" onClick={redirectToGmail}>Gmail</Footer.Link>
+                    <img src="/src/assets/IconoGmail.svg" alt="" className="w-5 h-auto" />
+                    <Footer.Link href="#" className="text-primary font-Rubik" onClick={redirectToGmail}>Gmail</Footer.Link>
                   </div>
                   <div className="flex gap-3">
-                    <img src={Whatsapp} alt="" className="w-5 h-auto" />
-                    <Footer.Link href="#" className="text-primary font-bold" onClick={redirectToWhatsApp}>Whatsapp</Footer.Link>
+                    <img src="/src/assets/IconoWhatsApp.svg" alt="" className="w-5 h-auto" />
+                    <Footer.Link href="#" className="text-primary font-Rubik" onClick={redirectToWhatsApp}>Whatsapp</Footer.Link>
                   </div>
 
                 </Footer.LinkGroup>
               </div>
               <div>
-                <Footer.Title title="Follow" />
+                <Footer.Title title="Follow" className="font-Rubik font-medium"/>
                 <Footer.LinkGroup col>
                   <div className="flex gap-3">
-                    <img src={Github} alt="" className="w-5 h-auto" />
-                    <Footer.Link href="https://github.com/DeLaConcha232" className="text-primary font-bold">Github</Footer.Link>
+                    <img src="/src/assets/IconoGitHub.svg" alt="" className="w-5 h-auto" />
+                    <Footer.Link href="https://github.com/DeLaConcha232" className="text-primary font-Rubik">Github</Footer.Link>
                   </div>
                 </Footer.LinkGroup>
               </div>
@@ -65,7 +60,7 @@ export default function Component() {
           </div>
           <Footer.Divider />
           <div className="w-full sm:flex sm:items-center sm:justify-between">
-            <Footer.Copyright href="#" by="Av-Skallet" year={2025} />
+            <Footer.Copyright href="#" by="Av-Skallet" year={2025} className="font-Bona"/>
             <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
               <Footer.Icon href="https://github.com/DeLaConcha232" icon={BsGithub} />
               <Footer.Icon icon={BsMailbox} onClick={redirectToGmail}/>
