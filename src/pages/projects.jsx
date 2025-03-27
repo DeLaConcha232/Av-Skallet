@@ -63,14 +63,12 @@ const CircleMenu = () => {
                 `,
                 }}
               >
-                <img key="icons" src={item} alt="" className=" w-14 h-auto md:w-20 lg:w-20 lg:h-auto" />
+                <img key="icons" src={item} alt="" className=" w-14 h-auto overflow-hidden md:w-20 lg:w-20 lg:h-auto" />
               </div>
             ))}
 
           </div>
           <div className="flex justify-center flex-wrap gap-5">
-            {/* <button className="w-full text-buttons bg-backgroundSecond" onClick={() => handleRotate("left")}>⟲</button> */}
-            {/* <button className="w-full text-buttons bg-backgroundSecond" onClick={() => handleRotate("right")}>⟳</button> */}
           </div>
         </div>
         <section className="w-full h-96 flex justify-center items-center border border-collapse border-second p-4 shadow-2xl rounded-lg sm:mt-10">

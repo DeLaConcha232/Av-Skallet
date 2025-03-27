@@ -1,18 +1,18 @@
 
 
 import { Footer } from "flowbite-react";
-import { BsGithub, BsMailbox, BsWhatsapp } from "react-icons/bs";
+import { BsGithub, BsMailbox } from "react-icons/bs";
 
 export default function Component() {
   const redirectToWhatsApp = () => {
     const phoneNumber = "4491431962"; // Reemplaza con tu número de teléfono
-    const message = "Hola, me gustaría obtener más información."; // Mensaje predefinido
+    const message = "Hola, me gustaría obtener más información de Avskallet."; // Mensaje predefinido
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };
 
   const redirectToGmail = () => {
-    const email = "diegodiazdelaconcha23@gmail.com"; // Reemplaza con tu dirección de correo electrónico
+    const email = "avskallet@gmail.com"; // Reemplaza con tu dirección de correo electrónico
     const subject = "Solicitud de Información"; // Asunto predefinido
     const body = "Hola, me gustaría obtener más información sobre sus servicios."; // Cuerpo del mensaje predefinido
     const url = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -64,7 +64,7 @@ export default function Component() {
             <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
               <Footer.Icon href="https://github.com/DeLaConcha232" icon={BsGithub} />
               <Footer.Icon icon={BsMailbox} onClick={redirectToGmail}/>
-              <Footer.Icon icon={BsWhatsapp} onClick={redirectToWhatsApp}/>
+              {/* <Footer.Icon icon={BsWhatsapp} onClick={redirectToWhatsApp}/> */}
             </div>
           </div>
         </div>

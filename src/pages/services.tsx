@@ -1,8 +1,8 @@
-import { Button, Timeline } from "flowbite-react";
+import { Timeline } from "flowbite-react";
 import React from "react";
-import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
+import { HiCalendar } from "react-icons/hi";
 import '../styles/Services.css'
-// import Icon from '../assets/IconoCheck.svg';
+
 
 export default function Component() {
   return (
