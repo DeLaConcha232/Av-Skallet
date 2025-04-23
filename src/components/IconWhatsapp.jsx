@@ -1,5 +1,4 @@
-
-
+import IconWhatsappModule from "/assets/IconoWhatsApp.svg";
 
 
 export default function IconWhatsapp() {
@@ -14,7 +13,7 @@ export default function IconWhatsapp() {
     return (
         <>
             <main className="fixed bottom-0 right-0 flex justify-end items-center p-3 cursor-pointer" onClick={redirectToWhatsApp}>
-                <img src="/src/assets/IconoWhatsApp.svg" alt="iconoWhatsapp" className="w-12 h-auto md:w-14 lg:w-16" />
+                <img src={IconWhatsappModule} alt="iconoWhatsapp" className="w-12 h-auto md:w-14 lg:w-16" />
             </main>
         </>
     )

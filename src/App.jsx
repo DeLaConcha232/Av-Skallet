@@ -1,14 +1,13 @@
 import './App.css'
-import React from 'react'
 
-const Navbar = React.lazy(() => import('./components/Navbar'))
-const Dashboard = React.lazy(() => import('./pages/dashboard'))
-const Services = React.lazy(() => import('./pages/services'))
-const Projects = React.lazy(() => import('./pages/projects'))
-const Footer = React.lazy(() => import('./pages/Footer'))
-const Card = React.lazy(() => import('./components/Card'))
-const CardAuto = React.lazy(() => import('./components/CardAuto'))
-const IconWhatsapp = React.lazy(() => import('./components/IconWhatsapp'))
+import Navbar from './components/Navbar'
+import Dashboard from './pages/dashboard'
+import Services from './pages/services'
+import Projects from './pages/projects'
+import Footer from './pages/Footer'
+import Card from './components/Card'
+import CardAuto from './components/CardAuto'
+import IconWhatsapp from './components/IconWhatsapp'
 
 
 function App() {
@@ -40,10 +39,10 @@ function App() {
         </article>
         <article className='flex overflow-x-auto my-20 scroll-containerCard mr-5'>
           <div className='flex gap-10 p-10 flex-wrap'>
-            <Card title='Seguridad y Privacidad' description='La información y los datos proporcionados se manejan con total confidencialidad.' src='/src/assets/IconoTarjeta.svg' />
-            <Card title='Cotizaciones' description='Solicita una cotización personalizada según las necesidades de tu proyecto.' src='/src/assets/budget.svg' />
-            <Card title='Contacto' description='Comunicación directa a través de WhatsApp o correo electrónico' src='/src/assets/IconoContactos.svg' />
-            <Card title='Validación de calidad ' description='Diseño y desarrollo siguiendo las últimas tendencias y estándares tecnológicos' src='/src/assets/iconovalidation.svg' />
+            <Card title='Seguridad y Privacidad' description='La información y los datos proporcionados se manejan con total confidencialidad.' src='/assets/IconoTarjeta.svg' />
+            <Card title='Cotizaciones' description='Solicita una cotización personalizada según las necesidades de tu proyecto.' src='/assets/budget.svg' />
+            <Card title='Contacto' description='Comunicación directa a través de WhatsApp o correo electrónico' src='/assets/IconoContactos.svg' />
+            <Card title='Validación de calidad ' description='Diseño y desarrollo siguiendo las últimas tendencias y estándares tecnológicos' src='/assets/iconovalidation.svg' />
           </div>
         </article>
         <article className=''>

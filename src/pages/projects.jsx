@@ -10,14 +10,14 @@ const CircleMenu = () => {
 
 
   const items = [
-    "/src/assets/Node.jsICON.svg",
-    "/src/assets/HTMLicon.svg",
-    "/src/assets/CSSicon.svg",
-    "/src/assets/JSicon.svg",
-    "/src/assets/ReactICON.svg",
-    "/src/assets/TailwindCSSicon.svg",
-    "/src/assets/Bootstrapicon.svg",
-    "/src/assets/IconoGit.svg",
+    "/assets/Node.jsICON.svg",
+    "/assets/HTMLicon.svg",
+    "/assets/CSSicon.svg",
+    "/assets/JSicon.svg",
+    "/assets/ReactICON.svg",
+    "/assets/TailwindCSSicon.svg",
+    "/assets/Bootstrapicon.svg",
+    "/assets/IconoGit.svg",
   ];
 
   // Rotación automática

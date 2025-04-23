@@ -5,17 +5,7 @@ import viteCompression from 'vite-plugin-compression'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // build: {
-  //   rollupOptions: {
-  //     output: {
-  //       manualChunks: {
-  //         vendor: ['react', 'react-dom'], // Divide las dependencias principales en un archivo separado
-  //         swiper: ['swiper'], // Divide Swiper si es grande
-  //       },
-  //     },
-  //   },
-  //   // chunkSizeWarningLimit: 1000, // Opcional: aumenta el límite de advertencia
-  // },
+  base: '/', // Si se despliega en raíz. Ej: 'https://tu-sitio.com/'
   plugins: [
     react(),
     svgo({
@@ -28,4 +18,10 @@ export default defineConfig({
     }),
     viteCompression(),
   ],
+  resolve: {
+    alias: {
+      '@': '/src',
+      '@assets': '/src/assets'
+    },
+  },
 })
