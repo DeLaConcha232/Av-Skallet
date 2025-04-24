@@ -41,10 +41,10 @@ function App() {
         </article>
         <article className='flex overflow-x-auto my-20 w-full scroll-containerCard mr-5 bg-custom-backwhite bg-blend-overlay'>
           <div className='flex gap-10 p-10 flex-wrap justify-center items-center'>
-            <Card title='Seguridad y Privacidad' description='La información y los datos proporcionados se manejan con total confidencialidad.' src='/assets/IconoTarjeta.svg' />
-            <Card title='Cotizaciones' description='Solicita una cotización personalizada según las necesidades de tu proyecto.' src='/assets/budget.svg' />
-            <Card title='Contacto' description='Comunicación directa a través de WhatsApp o correo electrónico' src='/assets/IconoContactos.svg' />
-            <Card title='Validación de calidad ' description='Diseño y desarrollo siguiendo las últimas tendencias y estándares tecnológicos' src='/assets/iconovalidation.svg' />
+            <Card title='Seguridad y Privacidad' description='La información y los datos proporcionados se manejan con total confidencialidad.' src='/assets/IconoTarjeta.svg' alt='CardIcon' />
+            <Card title='Cotizaciones' description='Solicita una cotización personalizada según las necesidades de tu proyecto.' src='/assets/budget.svg' alt='Budgeticon'/>
+            <Card title='Contacto' description='Comunicación directa a través de WhatsApp o correo electrónico' src='/assets/IconoContactos.svg' alt='ContactIcon'/>
+            <Card title='Validación de calidad ' description='Diseño y desarrollo siguiendo las últimas tendencias y estándares tecnológicos' src='/assets/iconovalidation.svg' alt='validationIcon'/>
           </div>
         </article>
         <article className=''>

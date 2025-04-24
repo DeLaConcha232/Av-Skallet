@@ -37,37 +37,39 @@ export default function Component() {
               />
             </div>
             <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-2 sm:gap-6">
-              <div>
-                <Footer.Title title="Contact" className="font-Rubik font-medium"/>
-                <Footer.LinkGroup col>
-                  <div className="flex gap-3">
-                    <img src={IconGmail} alt="" className="w-5 h-auto" />
+              <div className="flex flex-col gap-6">
+                <Footer.Title title="Contact" className="font-Rubik font-medium mb-0" />
+                <div className="flex gap-3">
+                  <img src={IconGmail} alt="" className="w-5 h-auto" />
+                  <Footer.LinkGroup col>
                     <Footer.Link href="#" className="text-primary font-Rubik" onClick={redirectToGmail}>Gmail</Footer.Link>
-                  </div>
-                  <div className="flex gap-3">
-                    <img src={IconWhatsApp} alt="" className="w-5 h-auto" />
+                  </Footer.LinkGroup>
+                </div>
+                <div className="flex gap-3">
+                  <img src={IconWhatsApp} alt="" className="w-5 h-auto" />
+                  <Footer.LinkGroup col>
                     <Footer.Link href="#" className="text-primary font-Rubik" onClick={redirectToWhatsApp}>Whatsapp</Footer.Link>
-                  </div>
-
-                </Footer.LinkGroup>
+                  </Footer.LinkGroup>
+                </div>
               </div>
+
               <div>
-                <Footer.Title title="Follow" className="font-Rubik font-medium "/>
-                <Footer.LinkGroup col>
-                  <div className="flex gap-3">
-                    <img src={IconGitHub} alt="" className="w-5 h-auto" />
+                <Footer.Title title="Follow" className="font-Rubik font-medium " />
+                <div className="flex gap-3">
+                  <img src={IconGitHub} alt="" className="w-5 h-auto" />
+                  <Footer.LinkGroup col>
                     <Footer.Link href="https://github.com/DeLaConcha232" className="text-primary font-Rubik">Github</Footer.Link>
-                  </div>
-                </Footer.LinkGroup>
+                  </Footer.LinkGroup>
+                </div>
               </div>
             </div>
           </div>
           <Footer.Divider />
           <div className="w-full sm:flex sm:items-center sm:justify-between ">
-            <Footer.Copyright href="#" by="Av-Skallet" year={2025} className="font-Bona text-buttons"/>
+            <Footer.Copyright href="#" by="Av-Skallet" year={2025} className="font-Bona text-buttons" />
             <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-              <Footer.Icon href="https://github.com/DeLaConcha232" icon={BsGithub} />
-              <Footer.Icon icon={BsMailbox} onClick={redirectToGmail}/>
+              <Footer.Icon href="https://github.com/DeLaConcha232" icon={BsGithub} aria-label="GitHubIcon" />
+              <Footer.Icon icon={BsMailbox} onClick={redirectToGmail} aria-label="MailIcon" />
               {/* <Footer.Icon icon={BsWhatsapp} onClick={redirectToWhatsApp}/> */}
             </div>
           </div>

@@ -30,30 +30,30 @@ export default function App() {
         className="w-full h-full flex flex-col justify-center items-center"
       >
         <SwiperSlide className="text-center text-lg bg-white flex items-center justify-center">
-          <a href="https://calculatorimc.surge.sh/" target="_blank" rel="noreferrer">
-            <img src="/assets/IMCalculator.webp" alt="" className='object-cover' />
+          <a href="https://calculatorimc.surge.sh/" target="_blank" rel="noreferrer" aria-label='IMCalculatorWebApp'>
+            <img src="/assets/IMCalculator.webp" alt="IMCalculatorPage" className='object-cover' />
           </a>
         </SwiperSlide>
         <SwiperSlide className="text-center text-lg bg-white flex items-center justify-center">
-          <img src="/assets/Zetio.webp" alt="" className='object-cover'/>
+          <img src="/assets/Zetio.webp" alt="ZetioWebApp" className='object-cover'/>
         </SwiperSlide>
         <SwiperSlide className="text-center text-lg bg-white flex items-center justify-center">
-          <a href="https://bodycalculator.surge.sh/" target="_blank" rel="noreferrer">
-            <img src="/assets/bodyCalcultator.webp" alt="" className='object-cover ' />
+          <a href="https://bodycalculator.surge.sh/" target="_blank" rel="noreferrer" aria-label='BodyCalculatorWebApp'>
+            <img src="/assets/bodyCalcultator.webp" alt="BodyCalculatorPage" className='object-cover ' />
           </a>
         </SwiperSlide>
         <SwiperSlide className="text-center text-lg bg-white flex items-center justify-center">
-          <a href="https://deportivax.surge.sh/" target="_blank" rel="noreferrer">
-            <img src="/assets/DeportivaX.webp" alt="" className='object-cover ' />
+          <a href="https://deportivax.surge.sh/" target="_blank" rel="noreferrer" aria-label='DeportivaXWebApp'>
+            <img src="/assets/DeportivaX.webp" alt="DeportivaXwebApp" className='object-cover ' />
           </a>
         </SwiperSlide>
         <SwiperSlide className="text-center text-lg bg-white flex items-center justify-center">
-          <a href="https://startconsulting.surge.sh/" target="_blank" rel="noreferrer">
-            <img src="/assets/startConsulting.webp" alt="" className='object-cover ' />
+          <a href="https://startconsulting.surge.sh/" target="_blank" rel="noreferrer" aria-label='StartConsultingWebApp'>
+            <img src="/assets/startConsulting.webp" alt="StartConsultingPage" className='object-cover ' />
           </a>
         </SwiperSlide>
         <SwiperSlide className="text-center text-lg bg-white flex items-center justify-center">
-          <img src="/assets/sheetFromForm.webp" alt="" className='object-cover' />
+          <img src="/assets/sheetFromForm.webp" alt="SheetFromFormWebApp" className='object-cover' />
         </SwiperSlide>
       </Swiper>
     </>
