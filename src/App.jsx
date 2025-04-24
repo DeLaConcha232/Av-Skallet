@@ -14,12 +14,14 @@ function App() {
   return (
     <>
       <main className='bg-background w-full h-full flex flex-col'>
-        <article className=' w-full h-auto flex justify-between'>
-          <Navbar />
-        </article>
-        <article className='flex justify-center items-center px-10 mb-20 w-auto h-full mt-16 lg:mt-0'>
-          <Dashboard />
-        </article>
+        <div className='bg-custom-backwhite bg-blend-multiply'>
+          <article className=' w-full h-auto flex justify-between bg-transparent'>
+            <Navbar />
+          </article>
+          <article className='flex justify-center items-center px-10 pb-40 w-auto h-full pt-16 lg:mt-0 lg:pt-0'>
+            <Dashboard />
+          </article>
+        </div>
         <article id='service' className='flex justify-center items-center px-20 py-20 w-full h-auto mt-20 lg:mt-0'>
           <Services />
         </article>
@@ -34,11 +36,11 @@ function App() {
             <CardAuto title='Metodologías de trabajo efectivas' />
           </div>
         </article>
-        <article className='flex justify-center items-center p-5 pb-20 w-full h-auto pt-60 sm:p-20'>
+        <article className='flex justify-center items-center p-5 pb-20 w-full h-auto pt-40 sm:p-20 sm:pt-28'>
           <Projects />
         </article>
-        <article className='flex overflow-x-auto my-20 scroll-containerCard mr-5'>
-          <div className='flex gap-10 p-10 flex-wrap'>
+        <article className='flex overflow-x-auto my-20 w-full scroll-containerCard mr-5 bg-custom-backwhite bg-blend-overlay'>
+          <div className='flex gap-10 p-10 flex-wrap justify-center items-center'>
             <Card title='Seguridad y Privacidad' description='La información y los datos proporcionados se manejan con total confidencialidad.' src='/assets/IconoTarjeta.svg' />
             <Card title='Cotizaciones' description='Solicita una cotización personalizada según las necesidades de tu proyecto.' src='/assets/budget.svg' />
             <Card title='Contacto' description='Comunicación directa a través de WhatsApp o correo electrónico' src='/assets/IconoContactos.svg' />

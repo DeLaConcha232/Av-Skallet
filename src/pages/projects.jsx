@@ -10,13 +10,13 @@ const CircleMenu = () => {
 
 
   const items = [
-    "/assets/Node.jsICON.svg",
+    "/assets/NodeIcon.svg",
     "/assets/HTMLicon.svg",
     "/assets/CSSicon.svg",
     "/assets/JSicon.svg",
     "/assets/ReactICON.svg",
     "/assets/TailwindCSSicon.svg",
-    "/assets/Bootstrapicon.svg",
+    "/assets/BootstrapICON.svg",
     "/assets/IconoGit.svg",
   ];
 
