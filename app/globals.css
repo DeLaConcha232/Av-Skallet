@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 0 72.2% 50.6%;
+    --primary-foreground: 0 85.7% 97.3%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-zinc-800;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
