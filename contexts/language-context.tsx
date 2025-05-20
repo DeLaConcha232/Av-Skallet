@@ -164,6 +164,10 @@ const translations: Record<Language, Record<string, string>> = {
     "skills.practices.title": "Development Practices",
     "skills.practices.description": "Following industry best practices for quality and efficiency",
 
+    // Design
+    "skills.design.title": "Design Practices",
+    "skills.design.description": "Applying creative and user-centered design principles to deliver visually appealing and functional digital experiences.",
+
     // Projects Section
     "projects.badge": "Portfolio",
     "projects.title": "Featured Projects",
@@ -183,8 +187,8 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.subtitle": "Have a project in mind? I'd love to hear about it. Let's discuss how we can work together.",
     "contact.info.title": "Contact Information",
     "contact.info.subtitle": "Reach out through any of these channels",
-    "contact.form.title": "Send a Message",
-    "contact.form.subtitle": "Fill out the form below and I'll get back to you as soon as possible",
+    "contact.form.title": "Send a Whatsapp Message",
+    "contact.form.subtitle": "Send me a message below and I'll get back to you as soon as possible",
     "contact.form.name": "Name",
     "contact.form.email": "Email",
     "contact.form.subject": "Subject",
@@ -210,9 +214,9 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Hero Section
     "hero.available": "Disponible para contratar",
-    "hero.title": "Creando Experiencias Digitales",
+    "hero.title": "Ayudando a nacer nuevas ideas",
     "hero.subtitle":
-      "Desarrollador full-stack especializado en crear experiencias digitales elegantes, eficientes y centradas en el usuario.",
+      "Equipo de desarrollo especializado en ayudarte a sacar adelante tus ideas [cambiar]",
     "hero.viewProjects": "Ver Proyectos",
     "hero.contactMe": "Contáctame",
 
@@ -293,6 +297,10 @@ const translations: Record<Language, Record<string, string>> = {
     "skills.practices.title": "Prácticas de Desarrollo",
     "skills.practices.description": "Siguiendo las mejores prácticas de la industria para calidad y eficiencia",
 
+    // Design
+    "skills.design.title": "Prácticas de Diseño",
+    "skills.design.description": "Aplicando principios creativos y centrados en el usuario para ofrecer experiencias digitales visualmente atractivas y funcionales.",
+
     // Projects Section
     "projects.badge": "Portafolio",
     "projects.title": "Proyectos Destacados",
@@ -313,8 +321,8 @@ const translations: Record<Language, Record<string, string>> = {
       "¿Tienes un proyecto en mente? Me encantaría escucharlo. Hablemos sobre cómo podemos trabajar juntos.",
     "contact.info.title": "Información de Contacto",
     "contact.info.subtitle": "Comunícate a través de cualquiera de estos canales",
-    "contact.form.title": "Envía un Mensaje",
-    "contact.form.subtitle": "Completa el formulario a continuación y me pondré en contacto contigo lo antes posible",
+    "contact.form.title": "Envía un mensaje de Whatsapp",
+    "contact.form.subtitle": "Envíame un mensaje abajo y te responderé lo antes posible",
     "contact.form.name": "Nombre",
     "contact.form.email": "Correo",
     "contact.form.subject": "Asunto",
@@ -423,6 +431,10 @@ const translations: Record<Language, Record<string, string>> = {
     "skills.practices.title": "Pratiques de Développement",
     "skills.practices.description": "Suivant les meilleures pratiques de l'industrie pour la qualité et l'efficacité",
 
+    // Design
+    "skills.design.title": "Pratiques de Design",
+    "skills.design.description": "Application de principes créatifs et centrés sur l'utilisateur pour offrir des expériences numériques visuellement attrayantes et fonctionnelles.",
+
     // Projects Section
     "projects.badge": "Portfolio",
     "projects.title": "Projets en Vedette",
@@ -444,8 +456,8 @@ const translations: Record<Language, Record<string, string>> = {
       "Vous avez un projet en tête ? J'aimerais en entendre parler. Discutons de la façon dont nous pouvons travailler ensemble.",
     "contact.info.title": "Informations de Contact",
     "contact.info.subtitle": "Contactez-moi par l'un de ces canaux",
-    "contact.form.title": "Envoyez un Message",
-    "contact.form.subtitle": "Remplissez le formulaire ci-dessous et je vous répondrai dès que possible",
+    "contact.form.title": "Envoyez un message Whatsapp",
+    "contact.form.subtitle": "Envoyez-moi un message ci-dessous et je vous répondrai dès que possible",
     "contact.form.name": "Nom",
     "contact.form.email": "Email",
     "contact.form.subject": "Sujet",
@@ -546,6 +558,10 @@ const translations: Record<Language, Record<string, string>> = {
     // Practices
     "skills.practices.title": "开发实践",
     "skills.practices.description": "遵循行业最佳实践，确保质量和效率",
+
+    // 设计
+    "skills.design.title": "设计实践",
+    "skills.design.description": "运用创造性和以用户为中心的设计原则，打造视觉吸引力强且功能完善的数字体验。",
 
     // Projects Section
     "projects.badge": "作品集",

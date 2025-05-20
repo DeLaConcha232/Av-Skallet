@@ -24,6 +24,7 @@ import {
   Loader2,
   CheckCircle,
   AlertCircle,
+  Figma,
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useFormStatus } from "react-dom"
@@ -140,7 +141,7 @@ export default function PortfolioPage() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* WhatsApp Button */}
-      <WhatsAppButton phoneNumber="+1234567890" message="Hi! I'm interested in your portfolio services." />
+      <WhatsAppButton phoneNumber="+524491431962" message="Hi! I'm interested in your portfolio services." />
 
       {/* Header */}
       <motion.header
@@ -150,18 +151,19 @@ export default function PortfolioPage() {
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <div className="container flex h-16 items-center justify-between">
-          <Link href="/" className="text-xl font-bold">
+          <Link href="/" className="text-xl font-bold flex justify-center items-center gap-2">
             <motion.span
               className="text-red-500"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.5 }}
             >
-              Dev
+              Av
             </motion.span>
             <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7, duration: 0.5 }}>
-              Portfolio
+              -Skallet
             </motion.span>
+            <Image src="/Logotipoblanco.png" alt="Logotipo" width={30} height={30} />
           </Link>
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
@@ -287,7 +289,7 @@ export default function PortfolioPage() {
               animate={{ opacity: 1 }}
               transition={{ delay: 1.8, duration: 0.5 }}
             >
-              <Link href="#" className="hover:text-red-500">
+              <Link href="https://github.com/DeLaConcha232" target="_blank" className="hover:text-red-500">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Link>
@@ -295,7 +297,11 @@ export default function PortfolioPage() {
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="#" className="hover:text-red-500">
+              <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=avskallet@gmail.com"
+                className="hover:text-red-500"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
               </Link>
@@ -316,11 +322,11 @@ export default function PortfolioPage() {
       <section id="services" className="py-24 bg-zinc-950">
         <div className="container">
           <FadeIn>
-            <div className="mx-auto max-w-2xl text-center">
+            <div className="mx-auto max-w-2xl text-center flex justify-center items-center flex-col">
               <Badge className="mb-4 bg-red-500/10 text-red-500 hover:bg-red-500/20">{t("services.badge")}</Badge>
               <AnimatedText
                 text={t("services.title")}
-                className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl"
+                className="text-3xl font-bold tracking-normal sm:text-4xl md:text-5xl"
               />
               <motion.p
                 className="mt-4 text-zinc-400"
@@ -346,17 +352,17 @@ export default function PortfolioPage() {
                   t("services.web.feature4"),
                 ],
               },
-              {
-                title: t("services.mobile.title"),
-                description: t("services.mobile.description"),
-                icon: <Smartphone className="h-10 w-10 text-red-500" />,
-                features: [
-                  t("services.mobile.feature1"),
-                  t("services.mobile.feature2"),
-                  t("services.mobile.feature3"),
-                  t("services.mobile.feature4"),
-                ],
-              },
+              // {
+              //   title: t("services.mobile.title"),
+              //   description: t("services.mobile.description"),
+              //   icon: <Smartphone className="h-10 w-10 text-red-500" />,
+              //   features: [
+              //     t("services.mobile.feature1"),
+              //     t("services.mobile.feature2"),
+              //     t("services.mobile.feature3"),
+              //     t("services.mobile.feature4"),
+              //   ],
+              // },
               {
                 title: t("services.uiux.title"),
                 description: t("services.uiux.description"),
@@ -458,11 +464,11 @@ export default function PortfolioPage() {
       <section id="skills" className="py-24">
         <div className="container">
           <FadeIn>
-            <div className="mx-auto max-w-2xl text-center">
+            <div className="mx-auto max-w-2xl text-center flex justify-center items-center flex-col">
               <Badge className="mb-4 bg-red-500/10 text-red-500 hover:bg-red-500/20">{t("skills.badge")}</Badge>
               <AnimatedText
                 text={t("skills.title")}
-                className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl"
+                className="text-3xl font-bold tracking-normal sm:text-4xl md:text-5xl"
               />
               <motion.p
                 className="mt-4 text-zinc-400"
@@ -481,19 +487,25 @@ export default function PortfolioPage() {
                 title: t("skills.frontend.title"),
                 description: t("skills.frontend.description"),
                 icon: <Monitor className="h-10 w-10 text-red-500" />,
-                skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux", "Framer Motion"],
+                skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Tailwind", "Framer Motion", ""],
               },
               {
                 title: t("skills.backend.title"),
                 description: t("skills.backend.description"),
                 icon: <Server className="h-10 w-10 text-red-500" />,
-                skills: ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB", "AWS"],
+                skills: ["Node.js", "Express", "mySQL", "Supabase", "SQLite"],
               },
               {
                 title: t("skills.practices.title"),
                 description: t("skills.practices.description"),
                 icon: <Code className="h-10 w-10 text-red-500" />,
-                skills: ["CI/CD", "Test-Driven Development", "Agile", "Git", "Docker", "Performance Optimization"],
+                skills: ["Clean Code", "Agile", "Version Controls[Git]", "Scrum", "Responsive Design"],
+              },
+              {
+                title: t("skills.design.title"),
+                description: t("skills.design.description"),
+                icon: <Figma className="h-10 w-10 text-red-500" />,
+                skills: ["Figma", "Adobe XD", "Photoshop", "Illustrator", "Canva", "Premiere Pro"],
               },
             ].map((skill, index) => (
               <FadeIn key={index} delay={index * 2} direction="up">
@@ -538,7 +550,7 @@ export default function PortfolioPage() {
       <section id="projects" className="py-24 bg-zinc-950" ref={projectsRef}>
         <div className="container">
           <FadeIn>
-            <div className="mx-auto max-w-2xl text-center">
+            <div className="mx-auto max-w-2xl text-center flex justify-center items-center flex-col">
               <Badge className="mb-4 bg-red-500/10 text-red-500 hover:bg-red-500/20">Portfolio</Badge>
               <AnimatedText
                 text="Featured Projects"
@@ -550,7 +562,7 @@ export default function PortfolioPage() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
               >
-                A selection of my most impactful work across various domains and technologies.
+                A selection of some of my work across various domains and technologies.
               </motion.p>
             </div>
           </FadeIn>
@@ -621,7 +633,7 @@ export default function PortfolioPage() {
       <section id="why-me" className="py-24">
         <div className="container">
           <FadeIn>
-            <div className="mx-auto max-w-2xl text-center">
+            <div className="mx-auto max-w-2xl text-center flex justify-center items-center flex-col">
               <Badge className="mb-4 bg-red-500/10 text-red-500 hover:bg-red-500/20">{t("whyMe.badge")}</Badge>
               <AnimatedText
                 text={t("whyMe.title")}
@@ -731,13 +743,16 @@ export default function PortfolioPage() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   {[
-                    { icon: <Mail className="h-5 w-5" />, label: "Email", value: "hello@devportfolio.com" },
+                    {
+                      icon: <Mail className="h-5 w-5" />,
+                      label: "Email", value: "avskallet@gmail.com"
+                    },
                     {
                       icon: <Linkedin className="h-5 w-5" />,
                       label: "LinkedIn",
                       value: "linkedin.com/in/devportfolio",
                     },
-                    { icon: <Github className="h-5 w-5" />, label: "GitHub", value: "github.com/devportfolio" },
+                    { icon: <Github className="h-5 w-5" />, label: "GitHub", value: "https://github.com/DeLaConcha232" },
                   ].map((contact, index) => (
                     <motion.div
                       key={index}
@@ -764,7 +779,7 @@ export default function PortfolioPage() {
                   <CardTitle>{t("contact.form.title")}</CardTitle>
                   <CardDescription className="text-zinc-400">{t("contact.form.subtitle")}</CardDescription>
                 </CardHeader>
-                <CardContent>
+                {/* <CardContent>
                   {formState.success ? (
                     <motion.div
                       className="flex flex-col items-center justify-center space-y-4 py-8 text-center"
@@ -862,7 +877,7 @@ export default function PortfolioPage() {
                       </motion.div>
                     </form>
                   )}
-                </CardContent>
+                </CardContent> */}
               </Card>
             </FadeIn>
           </div>
@@ -885,8 +900,9 @@ export default function PortfolioPage() {
               transition={{ delay: 0.7, duration: 0.5 }}
             >
               <span className="text-xl font-bold">
-                <span className="text-red-500">Dev</span>Portfolio
+                <span className="text-red-500">Av</span>-Skallet
               </span>
+              <Image src="/Logotipoblanco.png" alt="Logotipo" width={30} height={30} />
               <span className="text-sm text-zinc-500">
                 © {new Date().getFullYear()} {t("footer.rights")}
               </span>
@@ -898,7 +914,7 @@ export default function PortfolioPage() {
               transition={{ delay: 0.9, duration: 0.5 }}
             >
               <motion.div whileHover={{ y: -5 }} transition={{ duration: 0.2 }}>
-                <Link href="#" className="text-zinc-400 hover:text-red-500">
+                <Link href="https://github.com/DeLaConcha232" className="text-zinc-400 hover:text-red-500">
                   <Github className="h-5 w-5" />
                   <span className="sr-only">GitHub</span>
                 </Link>
@@ -910,7 +926,11 @@ export default function PortfolioPage() {
                 </Link>
               </motion.div>
               <motion.div whileHover={{ y: -5 }} transition={{ duration: 0.2 }}>
-                <Link href="#" className="text-zinc-400 hover:text-red-500">
+                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=avskallet@gmail.com"
+                  className="text-zinc-400 hover:text-red-500"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Mail className="h-5 w-5" />
                   <span className="sr-only">Email</span>
                 </Link>
