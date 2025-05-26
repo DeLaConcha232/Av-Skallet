@@ -81,15 +81,15 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Hero Section
     "hero.available": "Available for hire",
-    "hero.title": "Crafting Digital Experiences",
+    "hero.title": "Transforming  ideas  into  realities",
     "hero.subtitle":
-      "Full-stack developer specializing in creating elegant, performant, and user-centered digital experiences.",
+      "Development team specialized in helping you plan, design, and develop elegant, fast, high-impact, and user-centered software.",
     "hero.viewProjects": "View Projects",
     "hero.contactMe": "Contact Me",
 
     // Services Section
     "services.badge": "Services",
-    "services.title": "What I Can Do For You",
+    "services.title": "What  I  can  do  for  you",
     "services.subtitle": "Comprehensive digital solutions tailored to your specific needs and goals.",
     "services.learnMore": "Learn More",
 
@@ -149,7 +149,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Skills Section
     "skills.badge": "Expertise",
-    "skills.title": "Technical Proficiency",
+    "skills.title": "Technical  Proficiency",
     "skills.subtitle": "A comprehensive toolkit of technologies and methodologies to bring your vision to life.",
 
     // Frontend
@@ -170,7 +170,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Projects Section
     "projects.badge": "Portfolio",
-    "projects.title": "Featured Projects",
+    "projects.title": "Featured  Projects",
     "projects.subtitle": "A selection of my most impactful work across various domains and technologies.",
     "projects.viewProject": "View Project",
     "projects.viewAll": "View All Projects",
@@ -214,15 +214,15 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Hero Section
     "hero.available": "Disponible para contratar",
-    "hero.title": "Ayudando a nacer nuevas ideas",
+    "hero.title": "Transformando  ideas  en  realidades",
     "hero.subtitle":
-      "Equipo de desarrollo especializado en ayudarte a sacar adelante tus ideas [cambiar]",
+      "Equipo de desarrollo especializado en ayudarte a planificar, diseñar y desarrollar software elegante, rapido, con precencia y centradas en el usuario.",
     "hero.viewProjects": "Ver Proyectos",
     "hero.contactMe": "Contáctame",
 
     // Services Section
     "services.badge": "Servicios",
-    "services.title": "Qué Puedo Hacer Por Ti",
+    "services.title": "Qué  puedo  hacer  por  ti",
     "services.subtitle": "Soluciones digitales integrales adaptadas a tus necesidades y objetivos específicos.",
     "services.learnMore": "Saber Más",
 
@@ -282,7 +282,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Skills Section
     "skills.badge": "Experiencia",
-    "skills.title": "Competencia Técnica",
+    "skills.title": "Competencia  Técnica",
     "skills.subtitle": "Un conjunto completo de tecnologías y metodologías para dar vida a tu visión.",
 
     // Frontend
@@ -303,7 +303,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Projects Section
     "projects.badge": "Portafolio",
-    "projects.title": "Proyectos Destacados",
+    "projects.title": "Proyectos  Destacados",
     "projects.subtitle": "Una selección de mis trabajos más impactantes en diversos dominios y tecnologías.",
     "projects.viewProject": "Ver Proyecto",
     "projects.viewAll": "Ver Todos los Proyectos",
@@ -348,15 +348,15 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Hero Section
     "hero.available": "Disponible pour embauche",
-    "hero.title": "Création d'Expériences Numériques",
+    "hero.title": "Création  d'Expériences  Numériques",
     "hero.subtitle":
-      "Développeur full-stack spécialisé dans la création d'expériences numériques élégantes, performantes et centrées sur l'utilisateur.",
+      "Équipe de développement spécialisée pour vous aider à planifier, concevoir et développer des logiciels élégants, rapides, percutants et centrés sur l'utilisateur.",
     "hero.viewProjects": "Voir les Projets",
     "hero.contactMe": "Me Contacter",
 
     // Services Section
     "services.badge": "Services",
-    "services.title": "Ce Que Je Peux Faire Pour Vous",
+    "services.title": "Ce  Que  Je  Peux  Faire  Pour  Vous",
     "services.subtitle": "Des solutions numériques complètes adaptées à vos besoins et objectifs spécifiques.",
     "services.learnMore": "En Savoir Plus",
 
@@ -416,7 +416,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Skills Section
     "skills.badge": "Expertise",
-    "skills.title": "Compétence Technique",
+    "skills.title": "Compétence  Technique",
     "skills.subtitle": "Une boîte à outils complète de technologies et méthodologies pour donner vie à votre vision.",
 
     // Frontend
@@ -437,7 +437,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Projects Section
     "projects.badge": "Portfolio",
-    "projects.title": "Projets en Vedette",
+    "projects.title": "Projets  en  Vedette",
     "projects.subtitle": "Une sélection de mes travaux les plus impactants dans divers domaines et technologies.",
     "projects.viewProject": "Voir le Projet",
     "projects.viewAll": "Voir Tous les Projets",
