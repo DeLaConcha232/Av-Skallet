@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState, useRef, useActionState } from "react"
+import { useState, useRef, useActionState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import {
@@ -39,13 +39,14 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { submitContactForm, type FormState } from "./actions"
 import { useLanguage } from "@/contexts/language-context"
 import { LanguageSelector } from "@/components/language-selector"
+import IconCircle from "@/components/IconCircle"
 
 // Project data
 const projectsData = [
   {
     title: "Zetio",
     description: "Web App Tournament Platform is a web application designed to help sports clubs manage their tournaments, statistics, and players, providing both admin and user interfaces. The goal is to offer a scalable, modular, and easy-to-maintain solution for organizing sports events.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Zetio.png?height=400&width=600",
     technologies: ["React", "Vite", "Tailwind", "Supabase", "PostgreSQL", "PWA"],
     link: "#",
   },
@@ -79,7 +80,7 @@ const projectsData = [
   },
   {
     title: "Gemada",
-    description: "Videogame 2D with ",
+    description: "Multiplatform 2D VideoGame, compatible with Android, IOS, Microsoft, made with a small and fast graphic engine, with a retro type concept and metrics and graphics of pixels. ",
     image: "/gemada.png?height=400&width=600",
     technologies: ["GODOT", "GDScript"],
     link: "#",
@@ -313,7 +314,9 @@ export default function PortfolioPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            <AnimatedSphere />
+             {/* Animation  */}
+            {/* <AnimatedSphere /> */}
+            <IconCircle />
           </motion.div>
         </div>
       </section>
